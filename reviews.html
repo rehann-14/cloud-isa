@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Gamers.GG</title>
+  <link rel="stylesheet" href="game.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="game.html" class="logo">Gamers.GG</a>
+    <input type="text" class="search-bar" placeholder="Search for Games...">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="game.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="review-form">
+      <h2>Write a Review</h2>
+      <form action="#" method="POST">
+        <label for="game-title">Game Title:</label>
+        <input type="text" id="game-title" name="game-title" required>
+
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" required>
+
+        <label for="review-text">Your Review:</label>
+        <textarea id="review-text" name="review-text" rows="5" required></textarea>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Terrible</option>
+        </select>
+
+        <button type="submit" class="submit-button">Submit Review</button>
+      </form>
+    </section>
+
+    <section class="existing-reviews">
+      <h2>Existing Reviews</h2>
+      <div class="review-card">
+        <h3>Marvel's Spider-Man 2</h3>
+        <p><strong>John Doe:</strong> This game is absolutely amazing! The graphics are stunning and the gameplay is so much fun. I can't get enough of it!</p>
+        <p><strong>Rating:</strong> ★★★★★</p>
+      </div>
+      <div class="review-card">
+        <h3>Resident Evil Village</h3>
+        <p><strong>Jane Smith:</strong> A thrilling experience with great storytelling. The atmosphere is intense, and the puzzles are challenging!</p>
+        <p><strong>Rating:</strong> ★★★★☆</p>
+      </div>
+      <div class="review-card">
+        <h3>Minecraft</h3>
+        <p><strong>Alex Johnson:</strong> Minecraft is a classic! I love the creativity it allows. Building and exploring never gets old.</p>
+        <p><strong>Rating:</strong> ★★★★★</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GAMERS.GG. All rights reserved.</p>
+  </footer>
+</body>
+</html>
